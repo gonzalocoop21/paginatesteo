@@ -4,7 +4,7 @@ document.getElementById("miFormulario").addEventListener("submit", function(even
     
     var nombre = document.getElementById("nombre").value;
     var email = document.getElementById("email").value;
-    var mensaje = "Nombre: " + nombre + "<br>Correo electrónico: " + email;
+    var mensaje = "Nombre: " + nombre + "\nCorreo electrónico: " + email;
     
     // Mostrar una alerta de confirmación
     var confirmacion = confirm("¿Estás seguro de enviar el formulario?\n\n" + mensaje);
