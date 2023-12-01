@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #acc864;
+    text-align: end;
+}
+
+header a {
+    display: inline-block;
+    margin: 11px;
+    color: #072a16;
+    font-family: 'Heebo', sans-serif;
+}
+
+p, li{
+    color:#2d6b22;
+    font-family: 'Jost', sans-serif;
+}
+
+h1, h2, legend{
+    color: #072a16;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+h3, label{
+    color:  #acc864;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+
+.inicial{
+    text-align: center;
+}
+
+a:hover{
+    font-weight: bold;
+    color:#072a16;
+    text-decoration: none;
+}
+
+.product, .Formularios{
+    text-align: center;
+}
+
+.container section ul {
+    overflow: hidden;
+    max-height: 0;
+    text-align: justify;
+    background: #e4e4e4;
+    transition: all 0.2s ease-in;
+}
+  
+.container section a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    background-color:#072a16;
+    border-bottom: 2px solid gray;
+    color: white;
+}
+
+.container section:target ul {
+    max-height: 120px;
+    padding: 10px;
+}
+
+li{
+    text-align: left;
+}
+
+.Contacto{
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-end; /* Alinea las imágenes a la derecha */
+    align-items: center; /* Centra verticalmente las imágenes */
+    background-color:#acc864 ;
+}
+
+.redes a {
+    margin-left: 10px; /* Espacio entre las imágenes */
+}
+
+.redes img {
+    width: 30px; /* Define el ancho de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+}

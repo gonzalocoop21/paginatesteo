@@ -1,0 +1,205 @@
+/*Estilos generales de la pagina*/
+body{
+    background-image:url("../images/white-background-50%.png");
+}
+
+h1{
+    color: #072a16;
+    font-family: 'Heebo'; 
+}
+
+h2{
+    font-family: 'Heebo'; 
+    color: #acc864;
+}
+
+p{
+    font-family: 'Jost'; 
+    color: #2d6b22;
+}
+/*Sección Inicio*/
+#inicio{
+    text-align: center;
+}
+
+#inicio h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#inicio h2{
+    margin-top: 0px;
+}
+
+#inicio img{
+    width: 50%;
+}
+/*Sección Descarga*/
+#descarga{
+    text-align: center;
+}
+.botones-descarga{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.botones-descarga img{
+    height: 5rem;
+}
+
+/*Sección Sobre Nosotros*/
+#nosotros{
+    text-align: center;
+}
+#nosotros-startup-img{
+    width: 40%;
+}
+.segmentos-objetivo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.segmento-huespedes img{
+    width: 60%;
+}
+
+.segmento-empresas img{
+    width: 70%;
+}
+/*Sección Sobre el Producto*/
+#producto{
+    text-align: center;
+}
+#producto img{
+    width: 50%;
+}
+
+/*Acordeon*/
+.acordeon{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40rem;
+    width: 100%;
+    margin: 15px auto;
+    background-color: #acc864;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+.acordeon-titulo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #acc864;*/
+    font-family: 'Jost';
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+.acordeon-estado{
+    font-family: 'Jost';
+    font-style: normal;
+    font-size: 30px;
+    color:black;
+}
+
+.acordeon-contenido{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #C8DA98;
+    margin: 5px 0px;
+}
+
+.acordeon-descripcion{
+    padding: 0 15px;
+    text-align: left;
+
+    height: 0px;
+    overflow: hidden;
+    display: none;
+
+    transition: all 0.3s ease;
+}
+/*SECCION CONTACTO*/
+#contacto h1, #contacto h2{
+    text-align: center;
+    margin: 5px;
+}
+
+#contacto form{
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    border: 2px solid #acc864;
+    border-radius: 8px;
+    padding: 10px;
+
+    margin-bottom: 10px;
+}
+
+#contacto form label{
+    font-family: 'Jost';
+    font-size: large;
+}
+
+#contacto form input{
+    font-family: 'Jost';
+    padding: 5px 5px;
+    width: 95%;
+    margin-bottom: 5px;
+    border: 1px solid #acc864;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#contacto form textarea{
+    max-width: 95%;
+    border: 1px solid #acc864;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.form-boton{
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 30%;
+}
+
+.form-boton input{
+    background-color: #C8DA98;
+}
+
+.form-boton input:hover{
+    background-color: #acc864;
+}
+
+#form-advertencia{
+    color: red;
+    font-size: small;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    /*Texto invisible hasta que sea necesario*/
+    display: none;
+}
+
+/*Los elementos se colocan en una sola columna si la pantalla es mediana/pequeña*/
+@media only screen and (max-width: 750px){
+    #contacto form{
+        width: 90%;
+    }
+
+    .botones-descarga{
+        grid-template-columns: 1fr;
+    }
+
+    .segmentos-objetivo{
+        grid-template-columns: 1fr;
+    }
+}
